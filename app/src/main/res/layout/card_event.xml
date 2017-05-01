@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#dddddd"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardMaxElevation="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/event_photo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#3b4148"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/btn_logut_bg"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:padding="8dp"
+                    android:id="@+id/attending_count"
+                    android:layout_alignRight="@+id/event_photo"
+                    android:layout_alignTop="@+id/event_photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/btn_logut_bg"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:padding="8dp"
+                    android:id="@+id/event_date"
+                    android:layout_alignRight="@+id/event_photo"
+                    android:layout_alignBottom="@+id/event_photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Going"
+                    android:textColor="@color/btn_logut_bg"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:padding="8dp"
+                    android:id="@+id/attendText"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_above="@+id/event_date"
+                    android:layout_alignLeft="@+id/event_photo"
+                    android:layout_alignBottom="@+id/event_photo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/attend"
+                    android:src="@drawable/ic_assignment_late_black_24dp"
+                    android:tint="@color/btn_logut_bg"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="visible"
+                    android:layout_alignTop="@+id/attendText"
+                    android:layout_toRightOf="@+id/attendText"
+                    android:layout_toEndOf="@+id/attendText" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_name"
+                    android:text="Event Name"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="96dp"
+                    android:textSize="20sp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/event_name"
+                    android:id="@+id/show_venue"
+                    android:src="@drawable/ic_place_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/show_event_info"
+                    android:src="@drawable/ic_error_outline_black_24dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/show_venue"
+                    android:layout_toStartOf="@+id/show_venue"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginEnd="24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
